@@ -1,0 +1,216 @@
+@import "mq";
+@import "fonts";
+@import "palette";
+// Uncomment for embeds
+//@import "embed";
+// Uncomment for full screen (including immersive article main media)
+//@import "fullscreen";
+.element-atom,
+.interactive-atom {
+    margin: 0px !important;
+}
+
+.outline{
+	stroke:black;
+	fill:none;
+	stroke-width:2px;
+	stroke-linecap: round;
+}
+
+.borough{
+	stroke:black;
+	fill:none;
+	stroke-width:0.5px;
+}
+
+.borough-small-multiples{
+	stroke:#DADADA;
+	fill:white;
+	stroke-width:1px;
+}
+
+.area{
+	fill:#DADADA;
+	fill-opacity:.33;
+	stroke:#DADADA;
+	stroke-width:0.5px;
+}
+
+.Stabbed{
+	fill:#056DA1;
+	fill-opacity:.5;
+	stroke:#056DA1;
+}
+
+.Shot{
+	fill:#FF7F00;
+	fill-opacity:.5;
+	stroke:#FF7F00;
+}
+
+.other{
+	fill:#951D7A;
+	fill-opacity:.5;
+	stroke:#951D7A;
+}
+
+.murders-type{
+	width: 100%;
+	max-width:860px;
+	position:relative;
+	float: left;
+}
+
+.murders-type .tooltip{
+	min-width:150px;
+	height:auto;
+	padding:6px;
+	position:absolute;
+	z-index: 1011 !important;
+    font-size: 12px;
+    line-height: 16px;
+    font-family: "Guardian Text Sans Web","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    background: #fff;
+    border: 1px solid #333;
+    display: none;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    color: #333333;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-top: 1px solid #333;
+    box-shadow: 2px 2px 0 0 #333;
+
+    &.over{
+    	display: flex;
+    }
+}
+
+.tooltip-name {
+    font-size: 16px;
+    line-height: 18px;
+    font-family: "Guardian Headline","Guardian Egyptian Web","Guardian Headline Full",Georgia,serif;
+    font-weight: normal;
+    color: #000;
+    font-weight: 900;
+}
+
+.tooltip-age{
+	font-size: 12px;
+	font-family: "Guardian Headline","Guardian Egyptian Web","Guardian Headline Full",Georgia,serif;
+    font-weight: bold;
+    color: #000;
+    font-weight: 900;
+}
+
+.murders-type .over{
+	stroke:black;
+	stroke-width:2px;
+}
+
+.murders-standfirst {
+    font-size: 18px;
+    line-height: 28px;
+    font-family: "Guardian Text Egyptian Web",Georgia,serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: normal;
+    max-width: 420px;
+    margin-top: 0;
+    position: relative;
+    left: -10px;
+    padding: 10px 12px;
+}
+.murders-standfirst-number{
+	font-family: "Guardian Headline","Guardian Egyptian Web","Guardian Headline Full",Georgia,serif;
+	font-size: 21px;
+    font-weight: 900;
+    color: #333;
+    line-height: 24px;
+}
+
+.murders-standfirst-stabbings{
+	
+    font-weight: bold;
+    color: #056DA1;
+    line-height: 24px;
+}
+
+.murders-standfirst-shootings{
+	
+    font-weight: bold;
+    color: #FF7F00;
+    line-height: 24px;
+   
+}
+
+.small-multiples{
+	position:relative;
+	float:left;
+	width:100%;
+}
+
+.small-multiple-wrapper{
+	max-width: 300px;
+	min-width: 220px;
+	height:auto;
+	position:relative;
+	float:left;
+	margin-right: 12px;
+}
+
+.murders-standfirst-others{
+	
+    font-weight: bold;
+    color: #951D7A;
+    line-height: 24px;
+   
+}
+
+.small-multiple-total{
+	font-family: "Guardian Headline","Guardian Egyptian Web","Guardian Headline Full",Georgia,serif;
+	font-size: 36px;
+	line-height: 30px;
+	font-weight: bold;
+	margin-bottom: 5px;
+	color: #CC0A11;
+}
+
+.small-multiple-month{
+	font-family: "Guardian Text Egyptian Web",Georgia,serif;
+	font-size: 14px;
+	color:#333333;
+}
+
+.small-multiples-circle{
+	fill:#C70000;
+}
+.small-multiples-circle-past{
+	fill:#FFE6EC;
+}
+
+.map-annotation{
+	position:absolute;
+	width: 120px;
+	line-height: 15px;
+}
+
+.map-annottation-title{
+	font-family: "Guardian Headline","Guardian Egyptian Web","Guardian Headline Full",Georgia,serif;
+	font-size: 20px;
+	font-weight: bold;
+	color:#000;
+}
+
+.map-annottation-text{
+	font-family: 'Guardian Text Sans Web' , Georgia, serif;
+	font-size: 12px;
+	color:#333;
+}
+
+.map-annotation .annotation-arrow svg{
+	width: 40.8px;
+	height: 38.5px;
+	transform: translate(-44px, 100px);
+
+}
