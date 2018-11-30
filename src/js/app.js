@@ -7,8 +7,10 @@ import { $ } from "./util"
 
 let d3 = Object.assign({}, d3B, d3Select, d3geo, d3GeoProjection);
 
+
+
 const boroughsURL = "<%= path %>/assets/boroughs.json";
-const areasURL = "<%= path %>/assets/output/a.json";
+const areasURL = "<%= path %>/assets/a.json";
 const murdersURL = "<%= path %>/assets/London murders 2018 - Sheet6.csv";
 
 let padding = 12;
@@ -18,10 +20,21 @@ const mapEl = $(".murders-type");
 const monthsString = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
 let annotation = d3.select(".map-annotation");
-let annotationLatLong = [0.185,51.715]
+let annotationLatLong = [-0.02, 51.65]
+annotation.style('display', 'none')
 
 let width = mapEl.getBoundingClientRect().width - padding;
 let height = width*(711 / 860) - padding;
+let isMobile
+
+if(width < 600)
+{
+	isMobile = true
+}
+else
+{
+	isMobile = false
+}
 
 let murdersMap = d3.select(".murders-type")
 .append("svg")
@@ -65,17 +78,24 @@ function ready(data)
 
 window.onresize = function(event)
 {
-	if(mapEl.getBoundingClientRect().width < 860)
+	
+
+	width = mapEl.getBoundingClientRect().width - padding;
+	height = width*(711 / 860) - padding;
+
+	if(width - padding < 600)
 	{
-		width = mapEl.getBoundingClientRect().width - padding;
-		height = width*(711 / 860) - padding;
-
-		murdersMap.attr('width', width)
-		murdersMap.attr('height', height)
-
-		makeMainMap()
-		makeSmallMultiples()
+		isMobile = true
 	}
+	else
+	{
+		isMobile = false
+	}
+
+	murdersMap.attr('width', width)
+	murdersMap.attr('height', height)
+	makeMainMap()
+	makeSmallMultiples()
 }
 function makeSmallMultiples()
 {
@@ -105,7 +125,14 @@ function makeSmallMultiples()
 		.attr('class', 'small-multiple-wrapper')
 
 		let divEl = $(".small-multiple-wrapper")
-		let divWidth = divEl.getBoundingClientRect().width;
+		let divWidth =0;
+
+		console.log(isMobile)
+
+		if(isMobile)divWidth = 140
+			else divWidth=200
+
+		
 
 		let total = div.append('div')
 		.attr('class', 'small-multiple-total')
@@ -166,6 +193,7 @@ function makeSmallMultiples()
 		
 	})
 }
+
 function makeMainMap()
 {
 	murdersMap.selectAll('path').remove()
@@ -173,8 +201,7 @@ function makeMainMap()
 
 	projection.fitSize([width, height], boroughs);
 
-	annotation.style('left', projection(annotationLatLong)[0] + 'px')
-  	annotation.style('top', projection(annotationLatLong)[1] + 'px')
+  	d3.select(".murders-standfirst-number").html(murders.length)
 
 	murdersMap.selectAll('.area')
 	.data(areas.features)
@@ -258,47 +285,56 @@ function makeMainMap()
 	let tMethod = d3.select(".tooltip-method")
 
 	murdersMap.selectAll(".cell")
-		.data(polygons)
-		.enter()
-		.append("path")
-		.attr("class", "cell")
-		.attr("opacity", 0)
-		.attr("stroke", "black")
-		.attr("d", d => "M" + d.join("L") + "Z")
-		.on('mouseover', (d,i) => {
+	.data(polygons)
+	.enter()
+	.append("path")
+	.attr("class", "cell")
+	.attr("opacity", 0)
+	.attr("stroke", "black")
+	.attr("d", d => {return "M" + d.join("L") + "Z"})
+	.on('mouseover', (d,i) => {
+		d3.select('.tooltip').classed(" over", true)
+		d3.select('#c' + i).classed(" over", true)
+		tName.html(positions[i].name)
+		tAge.html(positions[i].age + " years old")
+		tDate.html(positions[i].date)
+		tStreet.html(positions[i].street)
+		tMethod.html(positions[i].method)
+	})
+	.on('mouseout', d => {
+		d3.select('.tooltip').classed(" over", false)
+		murdersMap.select(".over").classed(" over", false)
+	})
+	.on("mousemove", mousemove)
 
-			d3.select('.tooltip').classed(" over", true)
-			d3.select('#c' + i).classed(" over", true)
+	function mousemove(event) {
 
-			tName.html(positions[i].name)
-			tAge.html(positions[i].age + " years old")
-			tDate.html(positions[i].date)
-			tStreet.html(positions[i].street)
-			tMethod.html(positions[i].method)
-			mousemove()
-		})
-		.on('mouseout', d => {
-			d3.select('.tooltip').classed(" over", false)
-			murdersMap.select(".over").classed(" over", false)
-		})
-		.on("mousemove", mousemove)
+	  	let marginLeft = mapEl.getBoundingClientRect().left;
+	  	let marginTop = mapEl.getBoundingClientRect().top;
 
-  function mousemove(event) {
+	    tooltip.style('left', d3.mouse(this)[0] + padding + 'px')
+	    tooltip.style('top', d3.mouse(this)[1] + padding + 'px')
 
-  	let marginLeft = mapEl.getBoundingClientRect().left;
-  	let marginTop = mapEl.getBoundingClientRect().top;
+	    let tWidth = +tooltip.style("width").split('px')[0]
+	    let tLeft = +tooltip.style("left").split('px')[0]
 
-    tooltip.style('left', d3.mouse(this)[0] + padding + 'px')
-    tooltip.style('top', d3.mouse(this)[1] + padding + 'px')
+	    if(tLeft + tWidth > width - padding)
+	    {
+	    	tooltip.style('left', width - tWidth - padding + 'px')
+	    }
+	}
 
-    let tWidth = +tooltip.style("width").split('px')[0]
-    let tLeft = +tooltip.style("left").split('px')[0]
-
-    if(tLeft + tWidth > width - padding)
-    {
-    	tooltip.style('left', width - tWidth - padding + 'px')
-    }
-  }
+  	if(!isMobile){
+		annotation.style('display', 'block')
+		annotation.style('left', projection(annotationLatLong)[0] + 'px')
+  		annotation.style('top', projection(annotationLatLong)[1] - annotation.node().getBoundingClientRect().height + 'px')
+	}
+	else
+	{
+		annotation.style('display', 'none')
+	}
 }
+
+
 
 

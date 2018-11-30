@@ -5,9 +5,20 @@
 //@import "embed";
 // Uncomment for full screen (including immersive article main media)
 //@import "fullscreen";
+
 .element-atom,
 .interactive-atom {
-    margin: 0px !important;
+    //margin: 0px !important;
+    @include mq(mobile) {
+	margin: 0px !important;
+	}
+    @include mq(leftCol) {
+	margin-left: 160px !important;
+	}
+	@include mq(wide) {
+	margin-left: 120px !important;
+	}
+
 }
 
 .outline{
@@ -59,6 +70,7 @@
 	max-width:860px;
 	position:relative;
 	float: left;
+	z-index:1000!important;
 }
 
 .murders-type .tooltip{
@@ -147,16 +159,34 @@
 .small-multiples{
 	position:relative;
 	float:left;
-	width:100%;
+	max-width: 900px;
+	min-width: 320px;
+	
 }
 
 .small-multiple-wrapper{
-	max-width: 300px;
-	min-width: 220px;
+	
 	height:auto;
 	position:relative;
 	float:left;
 	margin-right: 12px;
+
+	@include mq(mobile) {
+		min-width: 45%;
+	}
+	@include mq(tablet){
+		min-width: 200px;
+	}
+    @include mq(desktop){
+    	min-width: 200px;
+    }
+    @include mq(leftCol){
+    	min-width: 200px;
+    }
+    @include mq(wide){
+    	min-width: 200px;
+    }
+
 }
 
 .murders-standfirst-others{
@@ -191,7 +221,7 @@
 
 .map-annotation{
 	position:absolute;
-	width: 120px;
+	width: 161px;
 	line-height: 15px;
 }
 
@@ -213,4 +243,8 @@
 	height: 38.5px;
 	transform: translate(-44px, 100px);
 
+}
+
+.cell{
+	z-index: 10001
 }
