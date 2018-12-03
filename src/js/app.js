@@ -3,14 +3,13 @@ import * as d3Select from 'd3-selection'
 import * as d3geo from 'd3-geo'
 import * as topojson from 'topojson'
 import * as d3GeoProjection from "d3-geo-projection"
+import textures from 'textures'
 import { $ } from "./util"
 
 let d3 = Object.assign({}, d3B, d3Select, d3geo, d3GeoProjection);
 
-
-
-const boroughsURL = "<%= path %>/assets/boroughs.json";
-const areasURL = "<%= path %>/assets/a.json";
+const boroughsURL = "<%= path %>/assets/london-boroughs.json";
+const areasURL = "<%= path %>/assets/london-lsoa-deprived-1.json";
 const murdersURL = "<%= path %>/assets/London murders 2018 - Sheet6.csv";
 
 let padding = 12;
@@ -19,9 +18,12 @@ const mapEl = $(".murders-type");
 
 const monthsString = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
-let annotation = d3.select(".map-annotation");
-let annotationLatLong = [-0.02, 51.65]
-annotation.style('display', 'none')
+let annotationRight = d3.select(".map-annotation-right");
+let annotationCenter = d3.select(".map-annotation-center");
+let annotationRightLatLong = [0.149, 51.397]
+let annotationCenterLatLong = [-0.1, 51.397]
+
+let note = d3.select(".murders-note");
 
 let width = mapEl.getBoundingClientRect().width - padding;
 let height = width*(711 / 860) - padding;
@@ -67,9 +69,9 @@ Promise.all([
 
 function ready(data)
 {
-	boroughs = topojson.feature(data[0], data[0].objects['london_boroughs_proper']);
-	boroughsMerged = topojson.merge(data[0], data[0].objects['london_boroughs_proper'].geometries);
-	areas = topojson.feature(data[1], data[1].objects['london-areas']);
+	boroughs = topojson.feature(data[0], data[0].objects['boroughs']);
+	boroughsMerged = topojson.merge(data[0], data[0].objects['boroughs'].geometries);
+	areas = topojson.feature(data[1], data[1].objects['london-lsoa-deprived-1']);
 	murders = data[2]
 
 	makeMainMap()
@@ -78,8 +80,6 @@ function ready(data)
 
 window.onresize = function(event)
 {
-	
-
 	width = mapEl.getBoundingClientRect().width - padding;
 	height = width*(711 / 860) - padding;
 
@@ -127,12 +127,8 @@ function makeSmallMultiples()
 		let divEl = $(".small-multiple-wrapper")
 		let divWidth =0;
 
-		console.log(isMobile)
-
 		if(isMobile)divWidth = 140
 			else divWidth=200
-
-		
 
 		let total = div.append('div')
 		.attr('class', 'small-multiple-total')
@@ -203,26 +199,38 @@ function makeMainMap()
 
   	d3.select(".murders-standfirst-number").html(murders.length)
 
-	murdersMap.selectAll('.area')
-	.data(areas.features)
-	.enter()
-	.append('path')
-	.attr('d', path)
-	.attr('class', 'area')
+  	let t = textures.lines()
+	.size(4)
+  	.strokeWidth(1)
+  	.stroke("#dadada");
+
+	murdersMap.call(t);
 
 	murdersMap.selectAll('.borough')
 	.data(boroughs.features)
 	.enter()
 	.append('path')
 	.attr('d', path)
-	.attr('class', 'borough')
-
+	.attr('class', d => 'borough ' + d.properties.name)
+	.style("fill", d => {if(d.properties.name == 'Lambeth' && !isMobile) return t.url()});
 
 	murdersMap
 	.append('path')
 	.datum(boroughsMerged)
 	.attr('d', path)
 	.attr('class', 'outline')
+
+
+	if(!isMobile){
+		murdersMap.selectAll('.area')
+		.data(areas.features)
+		.enter()
+		.append('path')
+		.attr('d', path)
+		.attr('class', 'area')
+	}
+
+	
 
 	let positions = [];
 	let points = [];
@@ -297,7 +305,7 @@ function makeMainMap()
 		d3.select('#c' + i).classed(" over", true)
 		tName.html(positions[i].name)
 		tAge.html(positions[i].age + " years old")
-		tDate.html(positions[i].date)
+		tDate.html(positions[i].date.split("-")[2] + ' ' + monthsString[positions[i].date.split("-")[1] - 1])
 		tStreet.html(positions[i].street)
 		tMethod.html(positions[i].method)
 	})
@@ -325,13 +333,22 @@ function makeMainMap()
 	}
 
   	if(!isMobile){
-		annotation.style('display', 'block')
-		annotation.style('left', projection(annotationLatLong)[0] + 'px')
-  		annotation.style('top', projection(annotationLatLong)[1] - annotation.node().getBoundingClientRect().height + 'px')
+		annotationRight.style('display', 'block')
+		annotationRight.style('left', projection(annotationRightLatLong)[0] + 'px')
+  		annotationRight.style('top', projection(annotationRightLatLong)[1] - annotationRight.node().getBoundingClientRect().height + 'px')
+
+  		annotationCenter.style('display', 'block')
+		annotationCenter.style('left', projection(annotationCenterLatLong)[0] + 'px')
+  		annotationCenter.style('top', projection(annotationCenterLatLong)[1] - annotationCenter.node().getBoundingClientRect().height + 'px')
+
+
+  		note.style('display', 'block')
 	}
 	else
 	{
-		annotation.style('display', 'none')
+		annotationRight.style('display', 'none')
+		annotationCenter.style('display', 'none')
+		note.style('display', 'none')
 	}
 }
 
