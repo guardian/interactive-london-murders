@@ -48,7 +48,12 @@
     },
     "dependencies": {
         "d3": "^5.7.0",
+        "d3-drag": "^1.2.3",
         "d3-geo-projection": "^2.5.0",
+        "d3-jetpack": "^2.0.19",
+        "d3-swoopy-drag": "0.0.3",
+        "d3-zoom": "^1.7.3",
+        "events": "^3.0.0",
         "gulp-rename": "^1.2.2",
         "gulp-replace": "^0.6.1",
         "mustache": "^2.3.0",

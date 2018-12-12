@@ -1,110 +1,112 @@
-Date,Victim,Age,Method,Street,lat,long,gender
- 2018-10-22,Ethan Nedd-Bruce,18,Other,"Armitage Road, Greenwich",51.4872609,0.0072782,Male
- 2018-10-22,Nazia Ali,25,Stabbed,"Ellesmere Road, Bow",51.533471,-0.0400013,Female
- 2018-10-17,Ian Tomlin,46,Other,"Charlotte Despard Ave, Battersea",51.4737478,-0.1566029,Male
- 2018-10-12,Moses Mayele,23,Stabbed,"Manford Way, Chigwell",51.6081725,0.1030883,Male
- 2018-10-11,Hashim Ali Ahmed,22,Shot,"Central Avenue, Hayes UB3",51.5133237,-0.4179877,Male
- 2018-9-27,Sandra Zmijan,32,Other,"Whittington Avenue, Hayes UB4",51.5245219,-0.4214584,Female
- 2018-9-22,Elyon Poku,20,Stabbed,Wilderton road stamford hill n16,51.5711466,-0.0779462,Male
- 2018-9-22,Guled Farah,19,Shot,vallentin road walthamstow,51.5861348,-0.0074934,Male
- 2018-9-21,Kanagusabi Ramathan,76,Other,"Burges Rd, East Ham",51.5393739,0.0564477,Male
- 2018-9-19,Ali Al Har,25,Stabbed,"Corinne Rd, Tufnell Park Road",51.5558878,-0.1363038,Male
- 2018-9-6,Memunatu Warne,46,Other,"Centurion Square, Berber Parade, Greenwich",51.4810034,0.0434494,Female
- 2018-9-3,Ismail Tanrikulu,22,Shot,Tottenham Cemetery,51.6032312,-0.0780279,Male
- 2018-8-31,Celia Levitt,68,Other,"Stoneleigh Road, Bromley",51.3980746,0.0606026,Female
- 2018-8-25,Shevaun Sorrell,22,Stabbed,"Creek Road, Deptford",51.4812731,-0.0204722,Male
- 2018-8-24,Carole Harrison,73,Other,"Mays Road, Teddington",51.4305964,-0.3536034,Female
- 2018-8-21,Kaltoun Saleh,43,Other,Corker Walk N7 7RH,51.5619355,-0.1154505,Female
- 2018-8-18,Leroy Junior Edwards,66,Stabbed,"Ringstead Rd, London SE6 2BP",51.4465523,-0.0180369,Male
- 2018-8-17,Gary Amer,63,Stabbed,"Madron St, London SE17 2LE",51.489097,-0.0820442,Male
- 2018-8-17,Joseph Cullimore,42,Stabbed,"Flaxen Rd, London E4 9TZ",51.6200545,-0.0115782,Male
- 2018-8-15,Simonne Kerr,31,Stabbed,"Grayshott Rd, London SW11 5UE",51.4677097,-0.1604903,Female
- 2018-8-7,Joel Urhie,7,Other,"Adolphus St, London SE8 4LU",51.4785431,-0.0317707,Male
- 2018-8-5,Malik Chattun,22,Stabbed,"Cambridge Gardens, Kingston upon Thames KT1 3NN",51.4098008,-0.2904301,Male
- 2018-8-2,Karen Peter,,Other,"Valentines Way, Dagenham",51.5579234,0.1772282,Female
- 2018-8-1,Siddique Kamara,23,Stabbed,Warham St Camberwell,51.4791343,-0.1055137,Male
- 2018-7-26,Latwaan Griffiths,18,Stabbed,denmark road camberwell,51.4718497,-0.100969,Male
- 2018-7-24,Sheila Thomas,69,Stabbed,"Casino Ave, Herne Hill,",51.4577965,-0.0952683,Female
- 2018-7-12,Katrina Makunova,17,Stabbed,"Brisbane St, Camberwell,",51.4776732,-0.0927066,Female
- 2018-7-1,Shuren Ma,72,Other,"Elmdene Road, Woolwich",51.4835558,0.0663072,Female
- 2018-6-27,Ishak Tacine,20,Stabbed,"Cavendish Road, Edmonton",51.6142426,-0.0571457,Male
- 2018-6-23,Gita Suri,56,Stabbed,"Tunnel Avenue, Greenwich",51.4934918,0.004296,Female
- 2018-6-23,Jordan Douherty,15,Stabbed,"Clockhouse Lane, Romford",51.6055002,0.1635737,Male
- 2018-6-18,Joshua Boadu,23,Stabbed,"Lucey Way, Bermondsey",51.494541,-0.0688648,Male
- 2018-6-14,Mark Tremain,52,Other,Albert Square,51.4771675,-0.121467,Male
- 2018-6-12,Gitana Matukeviciene,50,Other,"Rutland Gardens, Dagenham",51.5486553,0.1187918,Female
- 2018-6-9,Edmond Jonuzi,35,Stabbed,Turnpike Lane,51.590678,-0.1054516,Male
- 2018-6-1,Andra Hilitanu,28,Stabbed,Neasden Lane,51.5551585,-0.2522734,Female
- 2018-5-30,Mark Fontaine,41,Stabbed,"Cathcart Road, Kensington",51.486021,-0.1877431,Male
- 2018-5-26,Bethany-Maria Beales,22,Other,"The Heron, Moor Lane",51.519308,-0.0924665,Female
- 2018-5-25,Unknown woman,61,Other,Papworth Gardens,51.5497613,-0.1148663,Female
- 2018-5-21,Gerry Gaffney,46,Stabbed,Vassall Road,51.4775043,-0.1101478,Male
- 2018-5-21,Marcel Campbell,30,Stabbed,"Upper Street, Islington",51.5396671,-0.1046601,Male
- 2018-5-20,Sophie Cavanagh,31,Other,Chatterton Road,51.3924086,0.0333116,Female
- 2018-5-20,Arunesh Thangaraja,28,Stabbed,Upper Green East near Montrose Gardens and London Road,51.4051281,-0.1653769,Male
- 2018-5-18,Osman Shidane,20,Stabbed,"Victoria Road, Ruislip",51.5617966,-0.4041545,Male
- 2018-5-17,Abdulrahman Juma,23,Stabbed,"Crows Road, Barking",51.5417944,0.0695027,Male
- 2018-5-15,Rosina Coleman,85,Other,"Ashmour Gardens, Romford",51.5899929,0.1735825,Female
- 2018-5-13,Onees Khatoon,71,Other,"Gade Close, Hayes",51.5100723,-0.4097309,Female
- 2018-5-5,Rhyhiem Barton,17,Shot,Warham Street,51.4790541,-0.1031748,Male
- 2018-5-1,Leon Maxwell,38,Shot,Cumberland Road,51.5932862,-0.2883548,Male
- 2018-4-21,Kwasi Anim-Boadu,20,Stabbed,Roth Walk,51.5626889,-0.1136368,Male
- 2018-4-20,Aaron Springett,32,Assault,London Road,51.3984474,-0.2009144,Male
- 2018-4-17,John Woodward,47,Suspected assault,Hatton Garden,51.5197861,-0.1104468,Male
- 2018-4-16,Sami Sidhom,18,Stabbed,Chestnut Avenue,51.554381,0.0268237,Male
- 2018-4-15,Samantha Clarke,38,Stabbed,Sudbourne Road,51.4587072,-0.1234464,Male
- 2018-4-15,Raul Chiriac,26,Stabbed,Zenith Close,51.5919092,-0.2576587,Female
- 2018-4-15,Natasha Hill,18,Other,"Sewell Rd, London, SE2 9DJ",51.4977648,0.1098937,Female
- 2018-4-12,John Maclean,35,Stabbed,Manchester Road,51.4940254,-0.0102165,Male
- 2018-4-4,Babatunde Akintayo Awofeso,53,Awaiting post mortem,Upper Clapton Road,51.5634697,-0.0608032,Male
- 2018-4-4,Israel Ogunsola,18,Stabbed,Morning Lane at the junction with Link Street ,51.5470626,-0.0515631,Female
- 2018-4-3,Ourania Lambrou,80,Awaiting post mortem,Camden Road,51.5473623,-0.131945,Male
- 2018-4-3,Amaan Shakoor ,16,Shot,Markhouse Road,51.5748637,-0.0315648,Male
- 2018-4-2,Tanesha Melbourne-Blake,17,Shot,Chalgrove road,51.6009116,-0.0600997,Female
- 2018-4-1,Devoy Stapleton,20,Stabbed,Ellerton Road,51.4436147,-0.1785567,Male
- 2018-3-30,Leyla Mtumwa,36,Stabbed,Kirkstall Avenue,51.5883757,-0.0877379,Female
- 2018-3-29,Reece Tshoma,23,Stabbed,Nathan Way,51.4943608,0.0936355,Male
- 2018-3-27,Wieslaw Kopcynski,59,Awaiting post mortem,Stern Close,51.5279517,0.1165447,Male
- 2018-3-26,David Potter,50,Stabbed,Tooting High Street,51.4263929,-0.1718199,Male
- 2018-3-25,Abraham Badru,26,Shot,Ferncliff Road,51.550842,-0.0686263,Male
- 2018-3-24,Julian Joseph,36,Awaiting post mortem,Alpha Road,51.4751218,-0.0328119,Male
- 2018-3-22,Tyrone Silcott,41,Stabbed,Towpath Walk,51.5501002,-0.0312287,Male
- 2018-3-20,Beniamin Pieknyi,21,Stabbed,Stratford Centre on The Broadway,51.5415019,-0.0019972,Male
- 2018-3-19,Balbir Johal,48,Stabbed,Marlborough Street,51.5007707,-0.3990685,Male
- 2018-3-19,Jermaine Johnson,41,Stabbed,Vallentin Road,51.5861162,-0.0076684,Male
- 2018-3-18,Naomi Hersi,36,Stabbed,Haslemere Avenue,51.4756129,-0.4020166,Female
- 2018-3-17,Russell Jones,23,Stabbed,South Street,51.643472,-0.043086,Male
- 2018-3-14,Joseph Williams-Torres,20,Shot,Essex Close,51.5867256,-0.0396146,Male
- 2018-3-14,Lyndon Davis,18,Stabbed,Padnall Road,51.5838863,0.128597,Male
- 2018-3-12,Nikolay Glushkov,68,Compression of neck ,"Clarence Avenue, New Malden",51.4093361,-0.2693766,Male
- 2018-3-10,Michael Boyle,44,Stabbed,Langdale Close,51.4841899,-0.0991048,Male
- 2018-3-8,Kelvin Odunuyi,19,Shot,Wood Green High Road,51.5970516,-0.1111475,Male
- 2018-3-5,Laura Navarrete (De Figueira),47,Stabbed,South Road,51.435677,-0.3513346,Male
- 2018-3-5,Kelva Smith,20,Stabbed,Albert Road,51.3954304,-0.0660501,Female
- 2018-3-1,Christopher Beaumont,42,Stabbed,Melrose Gardens,51.500042,-0.2255117,Male
- 2018-2-25,Jozef Boci,33,Awaiting post mortem,Greenwich High Road,51.4771904,-0.017466,Male
- 2018-2-20,Amir Ellouzi,24,Shot,Old Pye Street,51.4975468,-0.1345377,Male
- 2018-2-20,Sadiq Aadam,20,Stabbed,Malden Road,51.5487055,-0.1548424,Male
- 2018-2-20,Abdikarim Hassan,17,Stabbed,Bartholomew Road,51.5459513,-0.142226,Male
- 2018-2-19,Rotimi Oshibanjo,26,Stabbed,"Halliday Square, Southall",51.5116722,-0.4088869,Male
- 2018-2-18,Lewis Blackman,19,Stabbed,Logan Place,51.4950106,-0.1990504,Male
- 2018-2-15,Mark Smith,48,Multiple injuries,Warren Road,51.6275686,-0.0062165,Male
- 2018-2-14,Promise Nkenda,17,Stabbed,Goldwing Close,51.51275,0.0195402,Male
- 2018-2-13,Saeeda Hussain,54,Stabbed,Staines Road,51.5512647,0.0851212,Female
- 2018-2-12,Bulent Kabala,41,Shot,Mount Pleasant and Edgeworth Road,51.6502618,-0.1583384,Male
- 2018-2-11,Sabri Chibani,19,Stabbed,Hopton Road,51.4258591,-0.128915,Male
- 2018-2-9,Hannah Leonard,55,Stabbed,Fellows Road,51.5441694,-0.1681349,Female
- 2018-2-4,Juan Olmos Saca,39,Stabbed,Atwell Road.,51.4682921,-0.0692274,Male
- 2018-2-4,Alfie Lamb,3,Other,"Adams Way, Croydon",51.388926,-0.0777654,Male
- 2018-2-3,Kwabena Nelson,22,Stabbed,St Mary's Close,51.5975449,-0.0686779,Male
- 2018-2-3,Hasan Ozcan,19,Stabbed,Abbey Road,51.5337871,0.0730081,Male
- 2018-2-2,Lily Mai Saint George,0,Other,No location released,51.6049656,-0.0897881,Female
- 2018-2-1,Seyed Azim Khan,n/a,Head injury,Ilford Cemetery,51.5610081,0.0870773,Male
- 2018-1-31,Khader Saleh,25,Stabbed,HMP Wormwood Scrubs,51.516967,-0.2425358,Male
- 2018-1-28,Yaya Mbye,26,Stabbed,Cazenove Road,51.5656267,-0.0689906,Male
- 2018-1-11,Leslie Hebblewhite,63,Stabbed,"Northumberland Park, London N17 0SU",51.6056157,-0.0627408,Male
- 2018-1-11,Harry Uzoka,25,Stabbed,Old Oak Road,51.5083358,-0.2474757,Male
- 2018-1-8,Vijay Patel,49,Head injury,"The Broadway, Mill Hill",51.5995156,-0.2544907,Male
- 2018-1-8,Daniel Frederick,34,Stabbed,Shakespeare Walk,51.5552625,-0.0838895,Male
- 2018-1-3,Elizabeta Lacatusu,44,Stabbed,Norfolk Road,51.5679766,0.0934675,Female
- 2018-1-1,Steve Narvaez-Jara,20,Stabbed,"Bartholomew Court, Old Street",51.5262186,-0.0925577,Male
+Date,Victim,Age,Method,Street,borough,lat,long,gender
+ 2018-1-1,Steve Narvaez-Jara,20,Stabbed,"Bartholomew Court, Old Street",Islington,51.5262186,-0.0925577,Male
+ 2018-1-3,Elizabeta Lacatusu,44,Stabbed,Norfolk Road,Redbridge,51.5679766,0.0934675,Female
+ 2018-1-8,Daniel Frederick,34,Stabbed,Shakespeare Walk,Hackney,51.5552625,-0.0838895,Male
+ 2018-1-8,Vijay Patel,49,Head injury,"The Broadway, Mill Hill",Barnet,51.5995156,-0.2544907,Male
+ 2018-1-11,Harry Uzoka,25,Stabbed,Old Oak Road,Hammersmith and Fulham,51.5083358,-0.2474757,Male
+ 2018-1-11,Leslie Hebblewhite,63,Stabbed,"Northumberland Park, London N17 0SU",Haringey,51.6056157,-0.0627408,Male
+ 2018-1-28,Yaya Mbye,26,Stabbed,Cazenove Road,Hackney,51.5656267,-0.0689906,Male
+ 2018-1-31,Khader Saleh,25,Stabbed,HMP Wormwood Scrubs,Hammersmith and Fulham,51.516967,-0.2425358,Male
+ 2018-2-1,Seyed Azim Khan,49,Head injury,Ilford Cemetery,Redbridge,51.5610081,0.0870773,Male
+ 2018-2-2,Lily Mai Saint George,0,Other,No location released,Haringey,51.6049656,-0.0897881,Female
+ 2018-2-3,Hasan Ozcan,19,Stabbed,Abbey Road,Barking and Dagenham,51.5337871,0.0730081,Male
+ 2018-2-3,Kwabena Nelson,22,Stabbed,St Mary's Close,Haringey,51.5975449,-0.0686779,Male
+ 2018-2-4,Alfie Lamb,3,Other,"Adams Way, Croydon",Croydon,51.388926,-0.0777654,Male
+ 2018-2-4,Juan Olmos Saca,39,Stabbed,Atwell Road.,Southwark,51.4682921,-0.0692274,Male
+ 2018-2-9,Hannah Leonard,55,Stabbed,Fellows Road,Camden,51.5441694,-0.1681349,Female
+ 2018-2-11,Sabri Chibani,19,Stabbed,Hopton Road,Lambeth,51.4258591,-0.128915,Male
+ 2018-2-12,Bulent Kabala,41,Shot,Mount Pleasant and Edgeworth Road,Barnet,51.6502618,-0.1583384,Male
+ 2018-2-13,Saeeda Hussain,54,Stabbed,Staines Road,Redbridge,51.5512647,0.0851212,Female
+ 2018-2-14,Promise Nkenda,17,Stabbed,Goldwing Close,Newham,51.51275,0.0195402,Male
+ 2018-2-15,Mark Smith,48,Multiple injuries,Warren Road,Waltham Forest,51.6275686,-0.0062165,Male
+ 2018-2-18,Lewis Blackman,19,Stabbed,Logan Place,Kensington and Chelsea,51.4950106,-0.1990504,Male
+ 2018-2-19,Rotimi Oshibanjo,26,Stabbed,"Halliday Square, Southall",Ealing,51.5116722,-0.4088869,Male
+ 2018-2-20,Abdikarim Hassan,17,Stabbed,Bartholomew Road,Camden,51.5459513,-0.142226,Male
+ 2018-2-20,Sadiq Aadam,20,Stabbed,Malden Road,Camden,51.5487055,-0.1548424,Male
+ 2018-2-20,Amir Ellouzi,24,Shot,Old Pye Street,Westminster,51.4975468,-0.1345377,Male
+ 2018-2-25,Jozef Boci,33,Awaiting post mortem,Greenwich High Road,Greenwich,51.4771904,-0.017466,Male
+ 2018-3-1,Christopher Beaumont,42,Stabbed,Melrose Gardens,Hammersmith and Fulham,51.500042,-0.2255117,Male
+ 2018-3-5,Kelva Smith,20,Stabbed,Albert Road,Croydon,51.3954304,-0.0660501,Female
+ 2018-3-5,Laura Navarrete (De Figueira),47,Stabbed,South Road,Richmond upon Thames,51.435677,-0.3513346,Male
+ 2018-3-8,Kelvin Odunuyi,19,Shot,Wood Green High Road,Haringey,51.5970516,-0.1111475,Male
+ 2018-3-10,Michael Boyle,44,Stabbed,Langdale Close,Southwark,51.4841899,-0.0991048,Male
+ 2018-3-12,Nikolay Glushkov,68,Compression of neck ,"Clarence Avenue, New Malden",Kingston upon Thames,51.4093361,-0.2693766,Male
+ 2018-3-14,Lyndon Davis,18,Stabbed,Padnall Road,Barking and Dagenham,51.5838863,0.128597,Male
+ 2018-3-14,Joseph Williams-Torres,20,Shot,Essex Close,Waltham Forest,51.5867256,-0.0396146,Male
+ 2018-3-17,Russell Jones,23,Stabbed,South Street,Enfield,51.643472,-0.043086,Male
+ 2018-3-18,Naomi Hersi,36,Stabbed,Haslemere Avenue,Hounslow,51.4756129,-0.4020166,Female
+ 2018-3-19,Jermaine Johnson,41,Stabbed,Vallentin Road,Waltham Forest,51.5861162,-0.0076684,Male
+ 2018-3-19,Balbir Johal,48,Stabbed,Marlborough Street,Ealing,51.5007707,-0.3990685,Male
+ 2018-3-20,Beniamin Pieknyi,21,Stabbed,Stratford Centre on The Broadway,Newham,51.5415019,-0.0019972,Male
+ 2018-3-22,Tyrone Silcott,41,Stabbed,Towpath Walk,Hackney,51.5501002,-0.0312287,Male
+ 2018-3-24,Julian Joseph,36,Awaiting post mortem,Alpha Road,Lewisham,51.4751218,-0.0328119,Male
+ 2018-3-25,Abraham Badru,26,Shot,Ferncliff Road,Hackney,51.550842,-0.0686263,Male
+ 2018-3-26,David Potter,50,Stabbed,Tooting High Street,Wandsworth,51.4263929,-0.1718199,Male
+ 2018-3-27,Wieslaw Kopcynski,59,Awaiting post mortem,Stern Close,Barking and Dagenham,51.5279517,0.1165447,Male
+ 2018-3-29,Reece Tshoma,23,Stabbed,Nathan Way,Greenwich,51.4943608,0.0936355,Male
+ 2018-3-30,Leyla Mtumwa,36,Stabbed,Kirkstall Avenue,Haringey,51.5883757,-0.0877379,Female
+ 2018-4-1,Devoy Stapleton,20,Stabbed,Ellerton Road,Wandsworth,51.4436147,-0.1785567,Male
+ 2018-4-2,Tanesha Melbourne-Blake,17,Shot,Chalgrove road,Haringey,51.6009116,-0.0600997,Female
+ 2018-4-3,Amaan Shakoor ,16,Shot,Markhouse Road,Waltham Forest,51.5748637,-0.0315648,Male
+ 2018-4-3,Ourania Lambrou,80,Awaiting post mortem,Camden Road,Camden,51.5473623,-0.131945,Male
+ 2018-4-4,Israel Ogunsola,18,Stabbed,Morning Lane at the junction with Link Street ,Hackney,51.5470626,-0.0515631,Female
+ 2018-4-4,Babatunde Akintayo Awofeso,53,Awaiting post mortem,Upper Clapton Road,Hackney,51.5634697,-0.0608032,Male
+ 2018-4-12,John Maclean,35,Stabbed,Manchester Road,Tower Hamlets,51.4940254,-0.0102165,Male
+ 2018-4-15,Natasha Hill,18,Other,"Sewell Rd, London, SE2 9DJ",Greenwich,51.4977648,0.1098937,Female
+ 2018-4-15,Raul Chiriac,26,Stabbed,Zenith Close,Barnet,51.5919092,-0.2576587,Female
+ 2018-4-15,Samantha Clarke,38,Stabbed,Sudbourne Road,Lambeth,51.4587072,-0.1234464,Male
+ 2018-4-16,Sami Sidhom,18,Stabbed,Chestnut Avenue,Newham,51.554381,0.0268237,Male
+ 2018-4-17,John Woodward,47,Suspected assault,Hatton Garden,Camden,51.5197861,-0.1104468,Male
+ 2018-4-20,Aaron Springett,32,Assault,London Road,Merton,51.3984474,-0.2009144,Male
+ 2018-4-21,Kwasi Anim-Boadu,20,Stabbed,Roth Walk,Islington,51.5626889,-0.1136368,Male
+ 2018-5-1,Leon Maxwell,38,Shot,Cumberland Road,Brent,51.5932862,-0.2883548,Male
+ 2018-5-5,Rhyhiem Barton,17,Shot,Warham Street,Southwark,51.4790541,-0.1031748,Male
+ 2018-5-13,Onees Khatoon,71,Other,"Gade Close, Hayes",Hillingdon,51.5100723,-0.4097309,Female
+ 2018-5-15,Rosina Coleman,85,Other,"Ashmour Gardens, Romford",Havering,51.5899929,0.1735825,Female
+ 2018-5-17,Abdulrahman Juma,23,Stabbed,"Crows Road, Barking",Barking and Dagenham,51.5417944,0.0695027,Male
+ 2018-5-18,Osman Shidane,20,Stabbed,"Victoria Road, Ruislip",Hillingdon,51.5617966,-0.4041545,Male
+ 2018-5-20,Arunesh Thangaraja,28,Stabbed,Upper Green East near Montrose Gardens and London Road,Merton,51.4051281,-0.1653769,Male
+ 2018-5-20,Sophie Cavanagh,31,Other,Chatterton Road,Bromley,51.3924086,0.0333116,Female
+ 2018-5-21,Marcel Campbell,30,Stabbed,"Upper Street, Islington",Islington,51.5396671,-0.1046601,Male
+ 2018-5-21,Gerry Gaffney,46,Stabbed,Vassall Road,Lambeth,51.4775043,-0.1101478,Male
+ 2018-5-25,Unknown woman,61,Other,Papworth Gardens,Islington,51.5497613,-0.1148663,Female
+ 2018-5-26,Bethany-Maria Beales,22,Other,"The Heron, Moor Lane",City of London,51.519308,-0.0924665,Female
+ 2018-5-30,Mark Fontaine,41,Stabbed,"Cathcart Road, Kensington",Kensington and Chelsea,51.486021,-0.1877431,Male
+ 2018-6-1,Andra Hilitanu,28,Stabbed,Neasden Lane,Brent,51.5551585,-0.2522734,Female
+ 2018-6-9,Edmond Jonuzi,35,Stabbed,Turnpike Lane,Haringey,51.590678,-0.1054516,Male
+ 2018-6-12,Gitana Matukeviciene,50,Other,"Rutland Gardens, Dagenham",Barking and Dagenham,51.5486553,0.1187918,Female
+ 2018-6-14,Mark Tremain,52,Other,Albert Square,Lambeth,51.4771675,-0.121467,Male
+ 2018-6-18,Joshua Boadu,23,Stabbed,"Lucey Way, Bermondsey",Southwark,51.494541,-0.0688648,Male
+ 2018-6-23,Jordan Douherty,15,Stabbed,"Clockhouse Lane, Romford",Havering,51.6055002,0.1635737,Male
+ 2018-6-23,Gita Suri,56,Stabbed,"Tunnel Avenue, Greenwich",Greenwich,51.4934918,0.004296,Female
+ 2018-6-27,Ishak Tacine,20,Stabbed,"Cavendish Road, Edmonton",Enfield,51.6142426,-0.0571457,Male
+ 2018-7-1,Shuren Ma,72,Other,"Elmdene Road, Woolwich",Greenwich,51.4835558,0.0663072,Female
+ 2018-7-12,Katrina Makunova,17,Stabbed,"Brisbane St, Camberwell,",Southwark,51.4776732,-0.0927066,Female
+ 2018-7-24,Sheila Thomas,69,Stabbed,"Casino Ave, Herne Hill,",Southwark,51.4577965,-0.0952683,Female
+ 2018-7-26,Latwaan Griffiths,18,Stabbed,denmark road camberwell,Southwark,51.4718497,-0.100969,Male
+ 2018-8-1,Siddique Kamara,23,Stabbed,Warham St Camberwell,Southwark,51.4791343,-0.1055137,Male
+ 2018-8-2,Karen Peter,50,Other,"Valentines Way, Dagenham",Barking and Dagenham,51.5579234,0.1772282,Female
+ 2018-8-5,Malik Chattun,22,Stabbed,"Cambridge Gardens, Kingston upon Thames KT1 3NN",Kingston upon Thames,51.4098008,-0.2904301,Male
+ 2018-8-7,Joel Urhie,7,Other,"Adolphus St, London SE8 4LU",Lewisham,51.4785431,-0.0317707,Male
+ 2018-8-15,Simonne Kerr,31,Stabbed,"Grayshott Rd, London SW11 5UE",Wandsworth,51.4677097,-0.1604903,Female
+ 2018-8-17,Joseph Cullimore,42,Stabbed,"Flaxen Rd, London E4 9TZ",Waltham Forest,51.6200545,-0.0115782,Male
+ 2018-8-17,Gary Amer,63,Stabbed,"Madron St, London SE17 2LE",Southwark,51.489097,-0.0820442,Male
+ 2018-8-18,Leroy Junior Edwards,66,Stabbed,"Ringstead Rd, London SE6 2BP",Lewisham,51.4465523,-0.0180369,Male
+ 2018-8-21,Kaltoun Saleh,43,Other,Corker Walk N7 7RH,Islington,51.5619355,-0.1154505,Female
+ 2018-8-24,Carole Harrison,73,Other,"Mays Road, Teddington",Richmond upon Thames,51.4305964,-0.3536034,Female
+ 2018-8-25,Shevaun Sorrell,22,Stabbed,"Creek Road, Deptford",Lewisham,51.4812731,-0.0204722,Male
+ 2018-8-31,Celia Levitt,68,Other,"Stoneleigh Road, Bromley",Bromley,51.3980746,0.0606026,Female
+ 2018-9-3,Ismail Tanrikulu,22,Shot,Tottenham Cemetery,Haringey,51.6032312,-0.0780279,Male
+ 2018-9-6,Memunatu Warne,46,Other,"Centurion Square, Berber Parade, Greenwich",Greenwich,51.4810034,0.0434494,Female
+ 2018-9-19,Ali Al Har,25,Stabbed,"Corinne Rd, Tufnell Park Road",Islington,51.5558878,-0.1363038,Male
+ 2018-9-21,Kanagusabi Ramathan,76,Other,"Burges Rd, East Ham",Newham,51.5393739,0.0564477,Male
+ 2018-9-22,Guled Farah,19,Shot,vallentin road walthamstow,Waltham Forest,51.5861348,-0.0074934,Male
+ 2018-9-22,Elyon Poku,20,Stabbed,Wilderton road stamford hill n16,Hackney,51.5711466,-0.0779462,Male
+ 2018-9-27,Sandra Zmijan,32,Other,"Whittington Avenue, Hayes UB4",Hillingdon,51.5245219,-0.4214584,Female
+ 2018-10-11,Hashim Ali Ahmed,22,Shot,"Central Avenue, Hayes UB3",Hillingdon,51.5133237,-0.4179877,Male
+ 2018-10-12,Moses Mayele,23,Stabbed,"Manford Way, Chigwell",Redbridge,51.6081725,0.1030883,Male
+ 2018-10-17,Ian Tomlin,46,Other,"Charlotte Despard Ave, Battersea",Wandsworth,51.4737478,-0.1566029,Male
+ 2018-10-22,Ethan Nedd-Bruce,18,Other,"Armitage Road, Greenwich",Greenwich,51.4872609,0.0072782,Male
+ 2018-10-22,Nazia Ali,25,Stabbed,"Ellesmere Road, Bow",Tower Hamlets,51.533471,-0.0400013,Female
+ 2018-11-22,Nazia Ali,25,Stabbed,"Ellesmere Road, Bow",Tower Hamlets,51.534471,-0.0400013,Female
+ 2018-12-22,Nazia Ali,25,Stabbed,"Ellesmere Road, Bow",Tower Hamlets,51.535471,-0.0400013,Female
