@@ -49,7 +49,6 @@ let murdersMap = d3.select(".murders-type")
 
 
 let smallMultiples = d3.select("#interactive-slot-1")
-console.log(smallMultiples)
 
 let projection = d3.geoMercator()
 
