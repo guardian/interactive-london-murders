@@ -22,8 +22,10 @@ const boroughsLabels = ['Harrow', 'Hillingdon', 'Barnet', 'Enfield', 'Havering',
 const affectedBoroughs = [];
 const smallMultiples = d3.select("#interactive-slot-1");
 const mapZoomTitle = d3.select(".map-zoom__title");
+const mapZoomCancel = d3.select(".map-zoom__cancel");
 
-mapZoomTitle.select('.map-zoom__cancel').on('click', reset)
+mapZoomCancel.on('click', reset)
+mapZoomCancel.style('display', 'none')
 
 let width = mapEl.getBoundingClientRect().width;
 let height = width * (711 / 860);
@@ -39,6 +41,8 @@ else
 {
 	isMobile = false
 }
+
+if(!isMobile)mapZoomTitle.style('display', 'none')
 
 let active = d3.select(null);
 
@@ -429,6 +433,8 @@ function makeMainMap(){
 	.attr('id', (d,i) => "c"+i)
 	.attr('r', d => d.r)
 
+	murdersMapGroup.selectAll("circle").style('pointer-events', 'none')
+
 	
 	const polygons = voronoi(points).polygons();
 
@@ -470,6 +476,7 @@ function makeMainMap(){
 			d3.selectAll('.murder-circle-over').classed(" murder-circle-over", false)
 			d3.select('.tooltip').classed(" over", true)
 			d3.select('#c' + i).classed(" murder-circle-over", true)
+
 			tName.html(positions[i].name)
 			tAge.html(positions[i].age + " years old")
 			tDate.html(positions[i].date.split("-")[2] + ' ' + monthsString[positions[i].date.split("-")[1] - 1])
@@ -477,7 +484,7 @@ function makeMainMap(){
 			tMethod.html(positions[i].method)
 		})
 
-		closeButton.style('display', 'flex')
+		//closeButton.style('display', 'flex')
 
 		murdersMapGroup.selectAll(".cell").style('pointer-events', 'none')
 
@@ -507,8 +514,8 @@ function clicked(d) {
 	murdersMapGroup.select('.feature.' + d.properties.name.split(' ').join('.'))
 	.style('pointer-events', 'none');
 
-	mapZoomTitle.style('display', 'flex')
 	mapZoomTitle.select('h3').html(d.properties.name)
+	mapZoomCancel.style('display', 'flex')
 
 	d3.selectAll('.feature').style('fill', 'white')
 
@@ -551,7 +558,8 @@ function reset() {
 	let nodes = d3.selectAll('.murder-circle-over');
 	nodes.classed(' murder-circle-over', false);
 
-	mapZoomTitle.style('display', 'none')
+	mapZoomTitle.select('h3').html('')
+	mapZoomCancel.style('display', 'none')
 
 	d3.selectAll('.feature').style('fill', 'white')
 	active.classed("active", false);
