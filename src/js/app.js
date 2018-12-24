@@ -18,7 +18,7 @@ const londonMapURL = "<%= path %>/assets/boroughs.json";
 const murdersURL = "https://interactive.guim.co.uk/docsdata-test/1erOIBZw9NPHIW2IaTVox8Z8XfeKr7hMim31i183RZhA.json"
 const mapEl = $(".murders-type");
 const monthsString = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-const boroughsLabels = ['Harrow', 'Hillingdon', 'Barnet', 'Enfield', 'Havering','Bexley','Bromley','Croydon','Sutton','Merton','Hounslow','Brent'];
+const boroughsLabels = ['Harrow', 'Hillingdon', 'Barnet', 'Enfield', 'Havering','Bexley','Bromley','Croydon','Sutton','Merton','Hounslow','Brent', 'Newham', 'Redbridge', 'Ealing', 'Richmond upon Thames', 'Tower Hamlets', 'Wandsworth'];
 const affectedBoroughs = [];
 const smallMultiples = d3.select("#interactive-slot-1");
 const mapZoomTitle = d3.select(".map-zoom__title");
@@ -133,7 +133,7 @@ function ready(data) {
 
 	murdersBorough.sort(function(a,b){return b.murders - a.murders})
 
-//THIS MAKES THE WORSE 3 BOROUGHS HIGHLIGHT---------------------------------------------
+//THIS MAKES THE WORSE 2 BOROUGHS HIGHLIGHT---------------------------------------------
 //
 //Just add or delete murdersBorough[position].borough in this array to alter highlighted boroughs on the map
 //
@@ -428,7 +428,6 @@ function makeMainMap(){
 	.attr('class', d => d.className)
 	.attr('id', (d,i) => "c"+i)
 	.attr('r', d => d.r)
-	.style('pointer-events', 'none');
 
 	
 	const polygons = voronoi(points).polygons();
