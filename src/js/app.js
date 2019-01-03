@@ -1,4 +1,4 @@
-import * as d3B from 'd3/index'
+import * as d3B from 'd3'
 import * as d3Select from 'd3-selection'
 import {event as currentEvent} from 'd3-selection';
 import * as d3Queue from 'd3-queue'
@@ -8,7 +8,7 @@ import * as d3Voronoi from 'd3-voronoi'
 import { $ } from "./util"
 import textures from 'textures'
 import * as d3Jetpack from 'd3-jetpack'
-import * as d3Swoopydrag from 'd3-swoopy-drag'
+import * as d3Swoopydrag from './swoo'
 import {wide, showcaseAnn, articleAnn, tabletAnn, smallTabletAnn} from '../assets/annotations.js'
 
 
@@ -142,7 +142,8 @@ function ready(data) {
 //Just add or delete murdersBorough[position].borough in this array to alter highlighted boroughs on the map
 //
 //
-affectedBoroughs.push(murdersBorough[0].borough, murdersBorough[1].borough)
+
+affectedBoroughs.push('Southwark', 'Haringey')
 //
 //
 //--------------------------------------------------------------------------------------

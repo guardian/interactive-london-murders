@@ -24,12 +24,12 @@ var wide = [
   {
     "annWidth": 400,
     "annLenght": 400,
-    "path": "M 252,-295 A 337.267 337.267 0 0 1 234,-72",
+    "path": "M 189,-315 A 161.861 161.861 0 0 1 48,-203",
     "class": "headline",
-    "text": "Greenwich",
+    "text": "Haringey",
     "textOffset": [
-      233,
-      -346
+      178,
+      -369
     ]
   },
   {
@@ -39,8 +39,8 @@ var wide = [
     "class": "text",
     "text": "Nine people killed in 2018",
     "textOffset": [
-      233,
-      -325
+      178,
+      -348
     ]
   }
 ]
@@ -71,12 +71,12 @@ var showcaseAnn = [
   {
     "annWidth": 400,
     "annLenght": 400,
-    "path": "M 107,-312 A 185.654 185.654 0 0 1 115,-113",
+    "path": "M 117,-312 A 187.531 187.531 0 0 1 -33,-243",
     "class": "headline",
-    "text": "Greenwich",
+    "text": "Haringey",
     "textOffset": [
-      69,
-      -362
+      106,
+      -367
     ]
   },
   {
@@ -86,59 +86,58 @@ var showcaseAnn = [
     "class": "text",
     "text": "Nine people killed in 2018",
     "textOffset": [
-      68,
-      -340
+      107,
+      -345
     ]
   }
 ]
-
 
   var articleAnn = [
-  {
-    "annWidth": 400,
-    "annLenght": 400,
-    "path": "M 160,-12 A 240.646 240.646 0 0 0 -33,-84",
-    "class": "headline",
-    "text": "Southwark",
-    "textOffset": [
-      158,
-      6
-    ]
-  },
-  {
-    "annWidth": 400,
-    "annLenght": 400,
-    "path": "",
-    "class": "text",
-    "text": "Worst-affected borough saw 11 people killed",
-    "textOffset": [
-      158,
-      26
-    ]
-  },
-  {
-    "annWidth": 400,
-    "annLenght": 400,
-    "path": "M 61,-325 A 501.604 501.604 0 0 1 -40,-247",
-    "class": "headline",
-    "text": "Greenwich",
-    "textOffset": [
-      39,
-      -374
-    ]
-  },
-  {
-    "annWidth": 400,
-    "annLenght": 400,
-    "path": "",
-    "class": "text",
-    "text": "Nine people killed in 2018",
-    "textOffset": [
-      39,
-      -353
-    ]
-  }
-]
+    {
+      "annWidth": 400,
+      "annLenght": 400,
+      "path": "M 116,-67 A 280.431 280.431 0 0 0 -77.00000762939453,-117",
+      "class": "headline",
+      "text": "Southwark",
+      "textOffset": [
+        119,
+        -62
+      ]
+    },
+    {
+      "annWidth": 400,
+      "annLenght": 400,
+      "path": "",
+      "class": "text",
+      "text": "Worst-affected borough saw 11 people killed",
+      "textOffset": [
+        118,
+        -43
+      ]
+    },
+    {
+      "annWidth": 400,
+      "annLenght": 400,
+      "path": "M 31,-331 A 110.441 110.441 0 0 1 -77,-254",
+      "class": "headline",
+      "text": "Haringey",
+      "textOffset": [
+        25,
+        -383
+      ]
+    },
+    {
+      "annWidth": 400,
+      "annLenght": 400,
+      "path": "",
+      "class": "text",
+      "text": "Nine people killed in 2018",
+      "textOffset": [
+        26,
+        -362
+      ]
+    }
+  ]
 
 var tabletAnn = [
   {
@@ -213,12 +212,12 @@ var smallTabletAnn = [
   {
     "annWidth": 400,
     "annLenght": 400,
-    "path": "M 31,-331 A 128.581 128.581 0 0 1 43,-138",
+    "path": "M 31,-331 A 192.693 192.693 0 0 1 -84,-262",
     "class": "headline",
-    "text": "Greenwich",
+    "text": "Haringey",
     "textOffset": [
-      1,
-      -380
+      11,
+      -383
     ]
   },
   {
@@ -228,9 +227,10 @@ var smallTabletAnn = [
     "class": "text",
     "text": "Nine people killed in 2018",
     "textOffset": [
-      1,
+      12,
       -362
     ]
   }
 ]
+
 export { wide, showcaseAnn, articleAnn, tabletAnn, smallTabletAnn};
