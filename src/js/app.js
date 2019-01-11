@@ -65,6 +65,7 @@ let path = d3.geoPath()
 
 let london;
 let murders;
+let water;
 
 let closeButton = d3.select('.tooltip-close-button');
 let tooltip = d3.select(".tooltip")
@@ -106,6 +107,7 @@ function ready(data) {
 
 	london = data[0];
 	murders = data[1].sheets.Latest;
+	water = data[2];
 
 	let stabbings = murders.filter(m => m.Method == 'Stabbed');
 	let shootings = murders.filter(m => m.Method.indexOf('Shot') != -1);
